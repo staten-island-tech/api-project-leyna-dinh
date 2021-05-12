@@ -1,5 +1,5 @@
 const DOMSelectors = {
-  grid: document.querySelector(".movie-grid"),
+  tempBtn: document.querySelector(".bad-button"),
 };
 
 export { DOMSelectors };
