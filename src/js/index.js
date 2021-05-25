@@ -1,4 +1,5 @@
 import { DOMSelectors } from "./DOM";
+import { mealTypes } from "./mealTypes";
 
 const key = "9e4e20197f7246dc982ddf51354c09fd";
 
