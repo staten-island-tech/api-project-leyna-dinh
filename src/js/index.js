@@ -1,4 +1,4 @@
 import { DOMSelectors } from "./DOM";
-import { genres } from "./genre";
+import { mealTypes } from "./mealTypes";
 
 const key = "YOURKEYHERE";

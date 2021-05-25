@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="scss/style2.scss" />
 </head>
 <body>
+    <div class="background"></div>
     <header class="header">spoonacular</header>
     <h1 class="desc">Explore Food!</h1>
     <form class="search">   
@@ -16,12 +17,17 @@
     </form>  
     <div class="browse">
         <h1 class="browse-header">Browse by Category</h1>
-        <div class="category">Dessert</div>
-        <div class="category">Dessert</div>
-        <div class="category">Dessert</div>
-        <div class="category">Dessert</div>
-        <div class="category">Dessert</div>
-        <a href="" class="random">take me anywhere</a>
+        <div class="category-container">
+            <div class="category type-main">Main Course</div>
+            <div class="category type-side">Side Dish</div>
+            <div class="category type-dessert">Dessert</div>
+            <div class="category type-appetizer">Appetizer</div>
+            <div class="category type-beverage">Beverage</div>
+            <div class="category type-snack">Snack</div>
+            <div class="category type-breakfast">Breakfast</div>
+        </div>       
+        <div class="category random">take me anywhere</div>
     </div>
+    <script src="js/index.js"></script>
 </body>
 </html>
