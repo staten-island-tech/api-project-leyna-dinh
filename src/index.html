@@ -11,7 +11,9 @@
     <nav class="nav">
       <a href="index.html" class="home">Home</a>
       <a href="index.html" class="browse">Browse</a>
-      <a href="index.html" class="search">Search</a>
+      <form class="search">   
+        <input class="search-input" type="text" placeholder="Search..." name="search">   
+    </form> 
     </nav>
 
     <p class="intro">Hello and welcome to this bad API website. You can search for a great deal of recipes (probably). Head to the Browse tab to start, or pick a category below</p>
@@ -20,8 +22,13 @@
     <p class="intro">vv display one recipe for ui design vv</p>
     <button class="bad-button">uhhh dw ab this button</button>
     <p class="intro">anyways. every time you refresh the page a new recipe name pops up for now w/ a little bit of info. seriously considering not using images bc they're so poor quality</p>
-    
+    <div class="daily">
+      <h2 class="daily-title">Daily Recipe</h2>
+      <h3 class="daily-name"></h3>
+      <a href="" class="daily-link">Take Me There</a>
+    </div>
     
     <script src="js/index.js"></script>
+    <script src="js/search.js"></script>
   </body>
 </html>
