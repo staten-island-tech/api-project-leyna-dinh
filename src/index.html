@@ -1,34 +1,58 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Design</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design 2</title>
     <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="scss/style.scss" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="scss/style2.scss" />
+</head>
+<body>
+    <div class="hide">
+        <div class="background-results "></div>
+        <header class="header ">spoonacular</header>
+        <div class="results-container "></div>
+    </div> 
+    <div class="container">
+    <div class="background-main"></div>
     <header class="header">spoonacular</header>
-    <nav class="nav">
-      <a href="index.html" class="home">Home</a>
-      <a href="index.html" class="browse">Browse</a>
-      <form class="search">   
-        <input class="search-input" type="text" placeholder="Search..." name="search">   
-    </form> 
-    </nav>
+    <h1 class="desc">Explore Food!</h1>
+    <form class="search">   
+        <input class="search-input" type="text" placeholder=" Search..." name="search">   
+    </form>  
 
-    <p class="intro">Hello and welcome to this bad API website. You can search for a great deal of recipes (probably). Head to the Browse tab to start, or pick a category below</p>
-    <p class="intro">the design loks awful right now. This is rough design 1, dunno if im going to keep it. I SWEAR EVERYTHING WILL LOOK BETTER LATER. maybe. I need a better font </p>
-    <a href="design2.html" class="intro">incomplete design 2 link, shoved aside rn</a>
-    <p class="intro">vv display one recipe for ui design vv</p>
-    <button class="bad-button">uhhh dw ab this button</button>
-    <p class="intro">anyways. every time you refresh the page a new recipe name pops up for now w/ a little bit of info. seriously considering not using images bc they're so poor quality</p>
     <div class="daily">
-      <h2 class="daily-title">Daily Recipe</h2>
-      <h3 class="daily-name"></h3>
-      <a href="" class="daily-link">Take Me There</a>
+        <p class="daily-title">Daily Recipe</p>
+        <!-- <p class="daily-name">Recipe Title Here</p>
+        <p class="recipe-desc">Description Here. There are no images bc lame</p>
+        <div class="attributes-container">
+            <div class="attribute">Lunch</div>
+            <div class="attribute">Dinner</div>
+            <div class="attribute">Dessert</div>
+        </div>
+        <a href="" class="daily-link">Take Me There</a> -->
     </div>
-    
+    <div class="browse">
+        <h1 class="browse-header">Browse by Category</h1>
+        <div class="category-container">
+            <button value="main course" name="main" class="category type-main">Main Course</button>
+            <button value="side dish" name="side" class="category type-side">Side Dish</button>
+            <button value="dessert" name="dessert" class="category type-dessert">Dessert</button>
+            <button value="appetizer" name="appetizer" class="category type-appetizer">Appetizer</button>
+            <button value="beverage" name="beverage"class="category type-beverage">Beverage</button>
+            <button value="snack" name="snack"class="category type-snack">Snack</button>
+            <button value="breakfast" name="breakfast"class="category type-breakfast">Breakfast</button>
+        </div>       
+<!--         <div class="category random">take me anywhere</div> -->
+    </div>
+    <div class="empty"></div>
+    </div>
+
     <script src="js/index.js"></script>
+    <script src="js/categories.js"></script>
     <script src="js/search.js"></script>
-  </body>
+    
+
+
+</body>
 </html>
