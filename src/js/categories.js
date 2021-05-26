@@ -1,5 +1,5 @@
 import { DOMSelectors } from "./DOM";
-import { createResults } from "./refactor";
+// import { createResults } from "./refactor";
 
 const key = "9e4e20197f7246dc982ddf51354c09fd";
 const listen = function () {
@@ -14,7 +14,18 @@ const listen = function () {
           );
           const data = await response.json();
           console.log(data);
-
+          const createResults = (DOMSelectors.body.innerHTML = ``);
+          DOMSelectors.hidden.classList.remove("hide");
+          data.results.forEach((result) => {
+            const resultsIndex = data.results.indexOf(result);
+            DOMSelectors.results.insertAdjacentHTML(
+              "afterbegin",
+              `<div class="result">
+                  <p class="recipe-title">${data.results[resultsIndex].title}</p>
+                  <img class="recipe-img" src="${data.results[resultsIndex].image}" alt="${data.results[resultsIndex].title}"
+                  </div>`
+            );
+          });
           createResults();
         } catch (error) {
           console.log(error);
