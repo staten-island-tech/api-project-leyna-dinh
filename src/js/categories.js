@@ -14,7 +14,7 @@ const listen = function () {
           );
           const data = await response.json();
           console.log(data);
-          const createResults = (DOMSelectors.body.innerHTML = ``);
+          DOMSelectors.body.innerHTML = ``;
           DOMSelectors.hidden.classList.remove("hide");
           data.results.forEach((result) => {
             const resultsIndex = data.results.indexOf(result);
@@ -26,7 +26,6 @@ const listen = function () {
                   </div>`
             );
           });
-          createResults();
         } catch (error) {
           console.log(error);
           alert("oof something is wrong");

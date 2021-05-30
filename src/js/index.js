@@ -35,7 +35,7 @@ const query = async function () {
 
     console.log(attArr);
     console.log(attArr[0], attArr[1], attArr[2]);
-    const createDaily = DOMSelectors.daily.insertAdjacentHTML(
+    DOMSelectors.daily.insertAdjacentHTML(
       "afterend",
       `
         <p class="daily-name">${data.recipes[0].title}</p>
@@ -47,8 +47,6 @@ const query = async function () {
         </div>
         <a href="${data.recipes[0].sourceUrl}" class="daily-link">Take Me There</a>`
     );
-
-    createDaily();
   } catch (error) {
     console.log(error);
     alert("uh oh something is wrong");
